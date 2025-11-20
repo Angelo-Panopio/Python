@@ -1,0 +1,29 @@
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def append(self, data):
+        current = self.head
+        if not current:
+            self.head = Node(data)
+            return
+        while current.next:
+            current = current.next
+        current.next = Node(data)
+
+    def display(self):
+        current = self.head
+        while current:
+            print(current.data, end=" -> ")
+            current = current.next
+        print("None")
+
+ll = LinkedList()
+for i in [1, 2, 3]:
+    ll.append(i)
+ll.display()
