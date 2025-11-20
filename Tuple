@@ -1,0 +1,6 @@
+t = (1, 2, 3, "Hello")
+
+print("Tuple:", t)
+
+for item in t:
+    print(item)
