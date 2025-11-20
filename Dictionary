@@ -1,0 +1,5 @@
+student = {"name": "Angelo", "age": 20, "course": "CS"}
+student["gwa"] = 2.75
+
+for key, value in student.items():
+    print(f"{key}: {value}")
