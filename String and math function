@@ -1,0 +1,9 @@
+import math
+
+text = input("Enter some text: ")
+num = int(input("Enter a number: "))
+
+print(f"Uppercase: {text.upper()}")
+print(f"Lowercase: {text.lower()}")
+print(f"Length: {len(text)}")
+print(f"Square root of {num}: {math.sqrt(num)}")
