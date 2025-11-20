@@ -1,0 +1,8 @@
+s = {1, 2, 3}   # duplicates removed automatically
+
+print("Original set:", s)
+
+s.add(4)        # add a new element
+s.discard(2)    # safely remove element (no error if not found)
+
+print("Updated set:", s)
