@@ -1,0 +1,10 @@
+import re
+
+text = "My email is test@example.com and you can also reach me at hello.world@domain.org"
+pattern = r"[\w.-]+@[\w.-]+\.\w+"
+
+matches = re.findall(pattern, text)
+if matches:
+    print("Found emails:")
+    for email in matches:
+        print("-", email)
