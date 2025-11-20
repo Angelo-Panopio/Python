@@ -1,0 +1,13 @@
+a, b = 10, 3
+
+operations = {
+    "Addition": a + b,
+    "Subtraction": a - b,
+    "Multiplication": a * b,
+    "Division": a / b,
+    "Modulo": a % b,
+    "Exponent": a ** b
+}
+
+for name, result in operations.items():
+    print(f"{name}: {result}")
